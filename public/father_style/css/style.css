@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+.panel{
+    /* height: 100vh; */
+    width: 100%;
+}
+
+
+.container{
+    margin-right:1% !important;
+}
+
+ #toggle{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    top: 20px;
+    right: 10px;
+    transition: .5s;
+    z-index: 2;
+    opacity: 0;
+    }
+    
+    #toggle::before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    }
+    
+    
+     #toggle::after{
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    }
+    
+    #toggle.active{
+        margin-right: 130px !important;
+     
+    }
+    
+ #toggle.active::before{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+
+    
+    }
+    
+     #toggle.active::after{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    
+    }
+
+.list {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: #2aa9b9;
+    /* right: -300px; */
+    right:0;
+
+    width: 15%;
+    height: 100vh;
+    z-index: 2;
+    transition: .5s;
+}
+
+.list.active{
+    right: 0;
+}
+
+
+.content.active{
+    transform: translateX(-30%);
+
+}
+
+.dropdown-toggle-2::after {
+    display: none !important;
+}
+
+
+.list ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.list ul li{
+    margin-top: 20px;
+    text-align: right;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+
+}
+
+.list .logo a img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: white;
+    font-size:18px;
+    font-weight: bold;
+    margin-right: 10px;
+    display: block;
+    width: 100%;
+}
+
+.list ul li:hover{
+    background-color: #42C4D4
+}
+
+
+.list-group-item{
+    border-radius: 10px !important;
+    background-color: transparent;
+}
+
+.list-group-item+.list-group-item.active{
+    margin-top: 20px;
+}
+
+
+.fa-bell{
+    color:#00bcd4;
+    font-size: 22px;
+}
+
+sup{
+    top: -1em;
+    font-weight: 700;
+    color: #888;
+    background-color: #e3e3e3;
+    border-radius: 50%;
+    padding: 1px 5px;
+    margin-left: -1px;
+}
+
+
+.dropdown-toggle-2{
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+/* start students */
+
+
+.content{
+    direction: rtl;
+    transition: .5s;
+    transform: translateX(-15%);
+
+
+}
+
+.nav{
+    direction: ltr !important;
+    background-color: #fff;
+    text-align: left;
+    height: 70px;
+    line-height: 50px;
+    position: relative;
+    width: 100%;
+    padding-left: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 20px;
+}
+
+
+.dropdown-menu{
+    font-size: 12px;
+}
+
+.nav .dropdown-menu.show{
+    text-align: right;
+}
+
+.dropdown .nav-link{
+    color: black;
+}
+
+.dropdown a{
+    color: black;
+}
+.nav-item{
+    line-height: 60px;
+}
+
+.nav-item img{
+        background-color: #00bcd4;
+}
+
+.dropdown{
+    line-height: unset;
+}
+
+.add-std{
+ 
+    margin-right: 4% !important;
+}
+
+.students{
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+
+.students a{
+    margin-left: 30%;
+    border-radius:10px;
+}
+
+.std{
+    background-color: white;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 15px;
+}
+
+
+.std .img-box{
+    width: 100px;
+    height: 100px;
+    float: right;
+    background-color: #f3f3f3;
+    padding: 8px;
+    margin-left: 40px;
+
+}
+
+.std .img-box img{
+    width: 100%;
+    height: 88%;
+}
+
+
+.std .dropdown{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.std .dropdown-menu.show{
+    text-align: right;
+    left: unset;
+    right: 0;
+}
+
+.std .dropdown button{
+    background: transparent;
+    border: none;
+
+}
+
+table th{
+padding: 5px;
+font-weight:400;
+}
+
+
+form{
+    margin-right: 19%;
+
+}
+
+.print{
+    position: fixed;
+    top: 20px;
+    left: 30%;
+
+
+}
+/* end students */
+
+
+
+@media (max-width:570px){
+
+h2{
+    font-size: 18px;
+}
+
+.list{
+    right: -30%;
+    width: 30%;
+}
+
+.content{
+    transform: translateX(0);
+}
+
+.nav{
+    width: 100%;
+}
+.students{
+    margin:25px;
+    padding-right: 0;
+    padding-top:0;
+    margin-top:60px;
+}
+
+ #toggle{
+    opacity: 1;
+
+}
+
+.list .logo a img{
+    width: 50px;
+    height: 50px;
+}
+
+.list ul li a{
+    font-size: 11px;
+}
+
+.std{
+    font-size: 10px;
+}
+
+.std .img-box{
+    width: 70px;
+    height: 70px;
+    margin-left:20px;
+}
+
+.add-std{
+    font-size: 10px;
+    width: 89px;
+    margin-left: 36% !important;
+}
+
+.dropdown-menu{
+    min-width: 4rem;
+}
+
+.dropdown-item{
+    padding: .20rem .5rem;
+}
+
+.std .dropdown-menu.show{
+    right: -70px;
+    font-size: 12px;
+}
+
+
+form{
+    width: 85%;
+    margin-right:5%;
+}
+
+.form-control,.btn{
+    font-size: 10px;
+
+}
+
+.form-control{
+    width: 90%;
+}
+
+.btn{
+    padding: 4px;
+    display: inline-block;
+}
+
+.print{
+padding:6px 20px;
+left:10%;
+}
+
+ #toggle{
+    height: 25px;
+    width: 20px;
+    cursor: pointer;
+    top: 25px;
+    right: 10px;
+    transition: .5s;
+    z-index: 2;
+}
+}
+
+
+
+@media(min-width:571px) and (max-width:770px){
+
+    h2{
+        font-size: 25px;
+    }
+
+    .list{
+        font-size: 14px;
+    
+    }
+
+    .list ul li{
+        width: 100%;
+    }
+
+    .list ul li a{
+        font-size: 10px;
+    }
+
+    .list .logo a img{
+        width: 60px;
+        height: 55px;
+    }
+
+}

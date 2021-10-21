@@ -1,0 +1,10 @@
+@extends('layouts.front')
+@section('content')
+@include('fronts.part.slider')
+@include('fronts.part.about')
+@include('fronts.part.service') 
+@include('fronts.part.study')  
+@include('fronts.part.about2') 
+@include('fronts.part.cert')   
+@include('fronts.part.footer')   
+@endsection

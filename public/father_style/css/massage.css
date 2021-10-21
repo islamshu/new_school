@@ -1,0 +1,59 @@
+@import url(style.css);
+
+
+h2{
+    margin-right: 30px;
+
+}
+
+form{
+    width: 1000px;
+    padding-top: 50px;
+    margin-right: 30px;
+}
+
+.btn{
+width: 120px;
+}
+
+
+
+
+@media(max-width:570px){
+    form{
+        width: 225px;
+        padding-top: 20px;
+        margin-right:0;
+    }
+
+    h2{
+        margin-right: 0;
+    }
+}
+
+
+
+@media(min-width:571px) and (max-width:770px){
+
+
+    .list{
+        font-size: 14px;
+    }
+
+    .list ul li{
+        width: 100%;
+    }
+
+    .list ul li a{
+        font-size: 10px;
+    }
+
+    .list .logo a img{
+        width: 90px;
+        height: 50px;
+    }
+
+    form{
+        width: 500px;
+    }
+}

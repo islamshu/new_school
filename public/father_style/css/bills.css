@@ -1,0 +1,108 @@
+@import url(style.css);
+
+
+.list{
+    height: 100vh;
+}
+
+.table-responsive{
+    width: 100%;
+}
+
+.billhead img{
+width: 140px;
+height: 60px;
+}
+
+.payDetail {
+    width: 800px;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+.billhead{
+    margin-bottom: 20px;
+}
+
+
+.table-sm td, .table-sm th{
+    padding: 0.8rem;
+}
+
+
+h2{
+    margin-right: 30px;
+}
+@media(max-width:570px){
+    .payDetail{
+        margin-right: 0;
+        width: unset;
+    }
+
+     .table td, .table th{
+        font-size: 12px !important;
+    }
+
+    .table-responsive{
+        width: 100%;
+    }
+
+    .col{
+        text-align: center;
+        margin-top: 11px;
+    }
+
+    .billhead{
+        font-size: 10px;
+    }
+
+    span{
+        float: left;
+    }
+
+    p{
+        float: right;
+    }
+
+
+    li img{
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .nav-link{
+        font-size: 12px;
+    }
+
+    form{
+        width: 40%;
+    }
+
+    .form-control,.btn{
+        font-size: 10px;
+
+    }
+
+    .form-control{
+        width: 65%;
+    }
+
+    .btn{
+        padding: 4px;
+        display: inline-block;
+     
+    }
+}
+
+@media(min-width:571px) and (max-width:770px){
+
+    .payDetail{
+        width: 620px;
+    }
+
+    .col-12{
+        max-width:93%;
+    }
+
+
+}

@@ -1,0 +1,76 @@
+@import url(style.css);
+
+.panel .list{
+    height: 100vh;
+}
+
+.table-responsive{
+    width: 70%;
+}
+
+
+.archive{
+    margin-right: 30px;
+}
+
+.view{
+    color: #4caf50;
+    font-weight: 500;
+}
+
+.unview{
+    color: #f44336;
+    font-weight: 500;
+}
+
+.fa-eye{
+    cursor: pointer;
+}
+
+.fa-eye:hover{
+    color: #4caf50;
+}
+
+.table-sm td, .table-sm th{
+    padding: 0.8rem;
+}
+
+
+@media(max-width:570px){
+
+    .archive{
+        margin-right: 0;
+    }
+
+    th{
+        font-size: 12px;
+        padding: 3px 8px 3px 8px;
+    }
+
+    td{
+        font-size: 10px;
+    }
+
+
+    h2{
+        font-size: 18px;
+    }
+
+    .table-responsive{
+        width: 100%;
+    }
+}
+
+
+
+@media(min-width:571px) and (max-width:770px){
+
+ 
+
+    .table-responsive{
+        width: 100%;
+    }
+
+
+
+}
